@@ -498,7 +498,13 @@ private:
   Evaluator evaluator;
   static constexpr const char *PROMPT = ">>> ";
   static constexpr const char *RESULT = "=> ";
-  static constexpr const char *WELCOME = "Welcome to the Calculator REPL!\n";
+  static constexpr const char *WELCOME =
+      "Welcome to the Calculator REPL!\n"
+      "type <expression> to evaluate an expression\n"
+      "type 'vars' to list variables\n"
+      "type 'clear' to clear variables\n"
+      "type 'exit' to exit\n"
+      "\n";
   static constexpr const char *EXIT = "Goodbye!\n";
 
 public:
